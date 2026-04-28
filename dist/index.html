@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SecurDrive" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta name="description" content="Sistema de control vehicular inteligente para empresas de vigilancia" />
+    <title>SecurDrive — Control Vehicular</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+    <script type="module" crossorigin src="/assets/index-CYNpp6WE.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/dexie-Dlz5ruU_.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-D5LpslRy.js">
+    <link rel="modulepreload" crossorigin href="/assets/pdf-GCJUdXoJ.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BYl5-Sr_.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(r){ console.log('[SW] Registrado:', r.scope); })
+            .catch(function(e){ console.warn('[SW] Error:', e); });
+        });
+      }
+    </script>
+  </body>
+</html>
